@@ -4,17 +4,20 @@
   color: var(--darkest-blue);
   flex-direction: column;
   display: flex;
+  color: #000;
   justify-content: center;
 }
 
 .tray-buttons-container {
   padding: 10px;
   display: flex;
+  color: #000;
 }
 
 .tray-buttons-container button {
   padding: 0;
   background-color: white;
+  color: #000;
   display: flex;
   align-items: center;
   flex-direction: column;

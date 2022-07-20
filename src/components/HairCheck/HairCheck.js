@@ -60,13 +60,13 @@ export default function HairCheck({ joinCall, cancelCall }) {
         <UserMediaError />
       ) : (
         <form className="hair-check" onSubmit={join}>
-          <h1>Setup your hardware</h1>
+          <h1>Now, you gotta set up some stuffs! ;)</h1>
           {/*Video preview*/}
           {videoTrack?.persistentTrack && <video autoPlay muted playsInline ref={videoElement} />}
 
           {/*Username*/}
           <div>
-            <label htmlFor="username">Your name:</label>
+            <label htmlFor="username">Username:</label>
             <input
               name="username"
               type="text"
@@ -78,7 +78,7 @@ export default function HairCheck({ joinCall, cancelCall }) {
 
           {/*Microphone select*/}
           <div>
-            <label htmlFor="micOptions">Microphone:</label>
+            <label htmlFor="micOptions">Mic:</label>
             <select name="micOptions" id="micSelect" onChange={updateMicrophone}>
               {microphones?.map((mic) => (
                 <option key={`mic-${mic.device.deviceId}`} value={mic.device.deviceId}>
@@ -113,7 +113,7 @@ export default function HairCheck({ joinCall, cancelCall }) {
           </div>
 
           <button onClick={join} type="submit">
-            Join call
+            Join Meeting
           </button>
           <button onClick={cancelCall} className="cancel-call">
             Back to start

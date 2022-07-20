@@ -33,21 +33,21 @@
 }
 
 .self-view {
-  width: 480px;
+  width: 500px;
   height: 270px;
   position: relative;
 }
 
 @media only screen and (max-width: 600px) {
   .self-view {
-    width: 240px;
+    width: 500px;
     height: 135px;
   }
 }
 
 /* Hard-code the self-view size if there's no one else in the call, just to make it align with the info-box */
 .self-view.alone {
-  width: 480px;
+  width: 600px;
   height: 270px;
 }
 
@@ -110,4 +110,9 @@
   word-break: break-word;
   font-weight: normal;
   font-size: 12px;
+}
+
+h1{
+  color: #2F80FF;
+  font-size: 20px;
 }

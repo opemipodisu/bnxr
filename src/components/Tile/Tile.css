@@ -1,12 +1,13 @@
 .tile-video {
   position: relative;
   width: 480px;
+  border-radius: 10px;
   height: 270px;
 }
 
 @media only screen and (max-width: 600px) {
   .tile-video {
-    width: 240px;
+    width: 440px;
     height: 135px;
   }
 }

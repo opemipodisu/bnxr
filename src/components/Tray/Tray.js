@@ -87,11 +87,11 @@ export default function Tray({ leaveCall }) {
         <div className="controls">
           <button onClick={toggleVideo}>
             {mutedVideo ? <CameraOff /> : <CameraOn />}
-            {mutedVideo ? 'Turn camera on' : 'Turn camera off'}
+            {mutedVideo ? 'You are invisible' : 'You are visible'}
           </button>
           <button onClick={toggleAudio}>
             {mutedAudio ? <MicrophoneOff /> : <MicrophoneOn />}
-            {mutedAudio ? 'Unmute mic' : 'Mute mic'}
+            {mutedAudio ? 'Muted' : 'Unmuted'}
           </button>
         </div>
         <div className="actions">
@@ -105,7 +105,7 @@ export default function Tray({ leaveCall }) {
           </button>
           <button onClick={toggleChat}>
             {newChatMessage ? <ChatHighlighted /> : <ChatIcon />}
-            {showChat ? 'Hide chat' : 'Show chat'}
+            {showChat ? 'Hide chat' : 'Chat'}
           </button>
         </div>
         <div className="leave">

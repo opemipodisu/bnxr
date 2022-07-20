@@ -72,7 +72,7 @@ export default function Call() {
           // When there are no remote participants or screen shares
           <div className="info-box">
             <h1>Waiting for others</h1>
-            <p>Invite someone by sharing this link:</p>
+            <p>Share this link to gwt someone in the call:</p>
             <span className="room-url">{window.location.href}</span>
           </div>
         )}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomeScreen.css';
+import { Container, Row, Col } from 'react-grid-system';
 
 export default function HomeScreen({ createCall, startHairCheck }) {
   const startDemo = () => {
@@ -10,10 +11,10 @@ export default function HomeScreen({ createCall, startHairCheck }) {
 
   return (
     <div className="home-screen">
-      <h1>React Daily Hooks custom video app</h1>
-      <p>Start the demo with a new unique room by clicking the button below.</p>
-      <button onClick={startDemo}>Click to start a call</button>
-      <p className="small">Select “Allow” to use your camera and mic for this call if prompted</p>
+      <h1>Hey there! 👋🏾</h1>
+      <p>Excited you've made it here, this was built with Daily.co's API and React. 🤩</p>
+      <button onClick={startDemo}>Create a meeting now ⚡️</button>
+
     </div>
   );
 }

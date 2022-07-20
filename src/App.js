@@ -3,7 +3,6 @@ import './App.css';
 import React, { useEffect, useState, useCallback } from 'react';
 import DailyIframe from '@daily-co/daily-js';
 import { DailyProvider } from '@daily-co/daily-react-hooks';
-
 import api from './api';
 import { roomUrlFromPageUrl, pageUrlFromRoomUrl } from './utils';
 
